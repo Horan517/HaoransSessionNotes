@@ -1,0 +1,29 @@
+---
+title: "My mock paper"
+output: html_notebook
+---
+
+this is an image.
+
+![](Hiking on Cootes Paradise - Sep 10.jpg)
+
+# 也可以这样用：
+![](/Users/horanxu/Library/CloudStorage/OneDrive-Personal/GEOG 712 - Reproducible Research Workflow with GitHub and R/My own session notes/Session 3/First-Project (without git and renv)/images/Hiking on Cootes Paradise - Sep 10.jpg) # 因为文件名比较长就可以直接cite "images"里面的图片了
+
+# paste0() 是一个链接文本的function
+
+here() 
+
+paste0(here(),"/images/Hiking on Cootes Paradise - Sep 10.jpg")
+
+![](`r paste0(here(),"/images/Hiking on Cootes Paradise - Sep 10.jpg")`)
+
+
+```{r}
+knitr::include_graphs(paste0(here(),"/images/Hiking on Cootes Paradise - Sep 10.jpg"))
+```
+
+
+library(here)
+here()
+

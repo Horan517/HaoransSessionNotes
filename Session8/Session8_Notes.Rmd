@@ -1,0 +1,83 @@
+---
+title: "Session8_Notes"
+author: "Haoran Xu"
+date: "2024-11-01"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Packag的重要性
+
+## Q1: 在data-raw里面的那个文件无法运行（貌似是因为没有将这个文件设置在这个r package里面
+这个东西：usethis::use_data(survey_results, overwrite = TRUE)
+
+
+## Q2 .geojson文件是什么类型
+### JavaScript Object Notation (JSON)
+.json文件是JavaScript Object Notation (JSON) 文件，属于纯文本文件类型，用于以结构化的方式存储和传输数据。JSON格式使用键值对和数组的形式来组织数据，具有良好的可读性且易于解析，广泛应用于网络应用程序中数据的交换。
+
+JSON文件的特点：
+结构化数据：使用键值对表示数据结构，支持嵌套、数组和对象。
+轻量级和跨平台：格式简洁，适合数据交换，支持多种编程语言。
+广泛应用：常用于Web开发中API的数据传输、配置文件、数据存储等。
+
+API数据传输：许多Web API使用JSON格式来发送和接收数据。
+配置文件：应用程序的配置常用JSON文件存储。
+数据存储：小型数据集（如本地存储、数据库字段）可使用JSON存储和读取。
+
+### .geojson
+.geojson文件是GeoJSON文件，属于一种基于JSON的地理数据文件格式，用于表示地理特征及其属性。它扩展了JSON格式，使其能够存储地理空间数据，如点、线、面（多边形）等，并可以包含与这些地理特征相关的属性信息。
+
+GeoJSON文件的特点：
+基于JSON：GeoJSON与JSON格式类似，但包含特定的地理空间数据结构。
+包含地理特征：可以描述地理对象，如点（Point）、线（LineString）、多边形（Polygon）等。
+包含属性信息：每个地理对象可以带有属性信息，便于存储和管理地理数据的相关信息。
+坐标系统：GeoJSON使用WGS84坐标系（即经纬度）来表示位置。
+
+支持的几何类型：
+Point（点）
+LineString（线）
+Polygon（多边形）
+MultiPoint（多点）
+MultiLineString（多线）
+MultiPolygon（多多边形）
+GeometryCollection（几何集合）
+
+## raw-data
+第一个table也是比较基本的table data(country, pop, year, co2)
+第二个table是metadata
+
+Antonio建议在raw-data folder里面写一些.rmd作为数据基本processing的方式，例如Session7中的"process-energy-and-emissions.Rmd"
+在这个文件的最后需要写一些codes可以将处理后的raw-data保存到如下位置:
+Save to data folder:
+```{r}
+usethis::use_data(energy_and_emissions,
+                  overwrite = TRUE)
+```
+
+写这个东西的好处是：raw-data不被损坏，同时所有的操作都可以重现。
+
+
+## 
+不同于r package需要用"#'"作为Roxygen来自动转成documentation存在"man"中，对于data的注释体现在"packr-package.R"中？（）
+
+## 最后全部check一遍
+
+在console中输入：
+```{r}
+library(myFirstPackage)
+?`myFirstPackage`
+```
+# 打开右下角的Help然后就可以出现documentaion里相关的介绍应该
+
+## 最后commit，然后再push
+有时候push不会出来，是因为还没有决定用github (好像是在console中写入什么代码)
+usethis::use_package_github_pages
+- 可以用`pkgdown`包，这个包可以让所有的package变得unified
+
+## 在交通领域，看一下是否有相关的已经做好的r packages(比如general social survey)，然后可以在它们的基础上构建自己的r packages包
+
+

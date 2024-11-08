@@ -1,0 +1,9 @@
+---
+title: "Notes 4"
+output: github_document
+---
+- Folder `images` contains jpeg, png, bmp, ans so files.
+- Folder `plots` contains images  that ...
+ 
+
+

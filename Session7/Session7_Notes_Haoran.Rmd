@@ -1,0 +1,52 @@
+---
+title: "Session7_Notes"
+author: "Haoran Xu"
+date: "2024-10-25"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+if(!require(remotes)){
+    install.packages("remotes")
+    library(remotes)
+}
+remotes::install_github("paezha/packr")
+
+library(packr)
+?packr  # for opening the "Help" menue of this package
+```
+
+trying:
+![ x^2 + y^2 = z^2](https://latex.codecogs.com/png.latex?%0Ax%5E2%20%2B%20y%5E2%20%3D%20z%5E2%0A ” x^2 + y^2 = z^2 “)
+
+
+###
+
+!! 所有的东西都可以参考ggplot包作为一个参照物
+
+网页的"article"就是vignette
+
+为了创建一个新的r package，直接创建一个新的project，然后选r package，里面有好几个不同的文件：比如man里面是documentation
+
+使用usethis::use_r()来创建新的function
+用usethis::use_r(name="multiplyr") 创建了一下新的r folder中的function文件叫"multiplyr.R",然后再在这个"multiplyr.R"里面写简单的function，就可以实现。
+
+roxygen 是用来自动写documentation ("man"文件夹里)，因为这里面的语言是latex
+需要用"#'"作为注释
+
+
+Git旁边多了一个Build，在这里可以点"Check"
+
+
+关于作业：先整理好文件夹，然后把前几节课重要的几个code复习一遍 (renv:: ..., ...)，甚至可以手写
+然后把这节课的内容复习一遍，完成所有的activity steps，最后把新创建的r project "check" 一下看是否能顺利运行，如果能顺利进行，说明这个新的r project做的比较好。
+再准备一个数据集（之前研究的数据？），准备下节课对这个数据进行一些处理。
+
+
+
+
+

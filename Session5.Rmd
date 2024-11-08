@@ -1,0 +1,26 @@
+---
+title: "Notes - Week 5"
+author: "Haoran Xu"
+date: "2024-10-04"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Folder Structure
+
+data...
+
+images...
+README
+
+
+做一些creative 的things: e.g., download mp3 file, and this is how you play the song
+
+创建一个fork基于Dr. Paez，under the liscense of CC-BY-SA-4.0 license, which means the repositories are free and transferrable. 可以基于它做任何事情。
+
+```{r}
+# git --version
+```
