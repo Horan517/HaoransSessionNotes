@@ -23,12 +23,22 @@ library(packr)
 trying:
 ![ x^2 + y^2 = z^2](https://latex.codecogs.com/png.latex?%0Ax%5E2%20%2B%20y%5E2%20%3D%20z%5E2%0A ” x^2 + y^2 = z^2 “)
 
+```{r}
+# examine all datasets available by package, including data packed with packr
+data(package = "packr")
+
+# To see the documentation for the data:
+?energy_and_emissions 
+
+```
+
 
 ###
 
 !! 所有的东西都可以参考ggplot包作为一个参照物
 
-网页的"article"就是vignette
+网页的"article"就是vignette:
+在 R 语言和 R 包开发中，vignette 指的是一类详细的文档，通常以教程或长篇说明的形式出现，用来帮助用户理解和使用包的功能。Vignettes 是 R 包的关键组成部分之一，通常包含示例代码、使用场景和解释，便于用户快速上手或理解复杂的功能。
 
 为了创建一个新的r package，直接创建一个新的project，然后选r package，里面有好几个不同的文件：比如man里面是documentation
 
