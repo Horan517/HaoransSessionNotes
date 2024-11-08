@@ -9,7 +9,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Packag的重要性
+Package的重要性
 
 ## Q1: 在data-raw里面的那个文件无法运行（貌似是因为没有将这个文件设置在这个r package里面
 这个东西：usethis::use_data(survey_results, overwrite = TRUE)
@@ -79,5 +79,6 @@ usethis::use_package_github_pages
 - 可以用`pkgdown`包，这个包可以让所有的package变得unified
 
 ## 在交通领域，看一下是否有相关的已经做好的r packages(比如general social survey)，然后可以在它们的基础上构建自己的r packages包
+
 
 
