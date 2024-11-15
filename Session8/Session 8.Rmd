@@ -9,16 +9,12 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-e.g., 举了一个例子：Sutudents from Toronto 在同时和Dr. Paez 做一个项目，但是那边的学生把documents弄的很乱。其中，有的学生只用了header作为instructions，但是有的学生就写的很好，比如他们会分不同的部分`libraries`, `data collection and data processing`
+e.g., 举了一个例子：Students from Toronto 在同时和Dr. Paez 做一个项目，但是那边的学生把documents弄的很乱。其中，有的学生只用了header作为instructions，但是有的学生就写的很好，比如他们会分不同的部分`libraries`, `data collection and data processing`
+用的是commercial data (不可以share)，但是在处理之后创造了一些secondary data (想做成open data), 想share这部分data但是整个数据都是弄在一起的，就需要花额外的时间进行data processing。
 
-用的是commertial data (不可以share)，但是在处理之后创造了一些secondary data (想做成open data), 想share这部分data但是整个数据都是弄在一起的，就需要花额外的时间进行data processsing。
 
 比较好的方法：把数据处理、作图、报告分成不同的部分，让读者很清楚folder management
 
 对data processing和report创建不同的projects, 最后对老的repository写一个read.me说清楚情况：已经迁移换代
 
-start things, make mistakes, ask quesitons --> long-time investment
-
-
-
-
+start things, make mistakes, ask questions --> long-time investment
