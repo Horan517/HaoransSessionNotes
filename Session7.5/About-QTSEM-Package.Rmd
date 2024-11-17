@@ -1,0 +1,53 @@
+---
+title: "About-QTSEM-Package"
+author: "Haoran Xu"
+date: "2024-11-15"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# License
+这两句代码是用 `usethis` 包为你的 R 项目添加许可证文件（license）的。
+### 1. **第一句代码**
+```r
+usethis::use_mit_license("Antonio Paez")
+```
+这句代码的作用是为你的项目添加一个 **MIT 许可证**，并设置版权所有者为 **"Antonio Paez"**。
+- **MIT 许可证** 是一种开源许可证，允许用户自由使用、复制、修改、合并和分发代码，但要求在分发时保留许可证的版权声明。
+- 添加此许可证会在你的项目目录中生成一个 `LICENSE.md` 文件，其中包含版权信息和 MIT 许可证文本。
+
+### 2. **第二句代码**
+```r
+usethis::use_ccby_license()
+```
+这句代码的作用是为你的项目添加一个 **CC-BY（Creative Commons Attribution）许可证**。
+- **CC-BY 许可证** 允许他人自由使用、修改和分发你的作品，但要求提供明确的署名以归功于原作者。
+- 此代码会在项目目录中创建一个 `LICENSE.md` 文件，包含 CC-BY 的具体条款和说明。
+
+### 总结
+- **第一句**：为项目添加 MIT 许可证，通常用于代码，限制较少。
+- **第二句**：为项目添加 CC-BY 许可证，适合内容创作或文档类项目，要求保留署名。
+
+# 代码块选项
+在 R Markdown (.Rmd) 文件中，{r example}、{r cars} 等是 代码块标签，它们在 R Markdown 中用来标识和控制 R 代码块的行为。具体来说，这些标签定义了代码块的名称和属性。
+```{r <chunk-name>, <options>}
+# R code goes here
+```
+```{r pressure, echo = FALSE}
+plot(pressure)
+```
+| **选项**         | **功能**                                                                                     | **示例**              |
+|------------------|---------------------------------------------------------------------------------------------|-----------------------|
+| `echo = TRUE`    | 是否显示代码（默认值是 `TRUE`，即显示代码）。                                                 | `echo = FALSE`        |
+| `eval = TRUE`    | 是否运行代码（默认值是 `TRUE`，即运行代码）。                                                 | `eval = FALSE`        |
+| `include = TRUE` | 是否包含代码块的输出（默认值是 `TRUE`）。                                                     | `include = FALSE`     |
+| `warning = TRUE` | 是否显示警告信息（默认值是 `TRUE`，即显示警告）。                                             | `warning = FALSE`     |
+| `message = TRUE` | 是否显示消息（默认值是 `TRUE`，如加载包时的提示）。                                           | `message = FALSE`     |
+| `fig.width`      | 图表的宽度（以英寸为单位）。                                                                  | `fig.width = 6`       |
+| `fig.height`     | 图表的高度（以英寸为单位）。                                                                  | `fig.height = 4`      |
+| `results = "asis"`| 控制输出结果的格式（如原样显示）。
+
+
