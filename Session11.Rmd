@@ -1,0 +1,74 @@
+---
+title: "Session11"
+author: "Haoran Xu"
+date: "2024-12-04"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## 大作业
+integration of a bigger project
+- most of every aspect of the worflow
+
+thesis: 需要
+
+下节课来之前：Fri. discussion of your ideas
+试一下macdown package (thesis for mcmaster)
+
+
+
+Reproducible repository
+-	Dataanalysis
+-	Brief review
+
+Big project: 准备一下我的论文，把数据、模型都放进去
+
+Click and make sure it will work
+
+Blog down?
+
+e.g., Bruno的Final project.
+一个rmd  pdf，里面包括介绍这个r package/dataset之类的
+
+
+
+## 上节课wrap-up
+如何用rarticle 这个包
+有template
+
+如何使用equations/figures
+需要label/index，可以有单独的folder这些东西
+
+bibliography有单独的文件
+- 文件类型：BibTex file (.bib)
+- 里面储存了不同的bibliography
+
+## 这节课讨论：Tables, References
+
+- bibliography's format
+  - reference 的格式
+  - 从EndNote到Zotero (更便宜，更小的公司，更开源一些), Mendeley是Elsevier的公司。Antonio现在逐渐用Zotero
+  - 用digital bibliography的好处：不用store纸质的文章；有多个projects的话也可以比较好的manage/store
+在文件最开始要先写一个“bibliography: ..."，然后后面可以使用"@title"的形式引用
+
+尝试一下把Zotero和R连接起来: 这个部分Antonio还没有弄特别成熟，但是确实可以网上搜一下
+
+如果有多个bibliography: {}
+
+关于cross-referencing: 
+
+## Table: kableEXTRA
+- integration with formattable (table, xtable包)：方便使用
+
+stargazer可以很方便的导出模型的结果
+gt也是一个可以尝试的package，但是cross-referencing不好用
+
+
+r snippets可以help you customize function alias
+
+
+Anastasia的Reading List (for her comps)
+借鉴一下她Github上的reading list文件
